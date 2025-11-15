@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href=" https://cdn.jsdelivr.net/npm/modern-normalize@3.0.1/modern-normalize.min.css "
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body class="font-[Arial]">
+    <header class="bg-orange-100 border-b border-orange-200">
+      <div
+        class="container flex justify-between items-center flex-wrap gap-y-[10px] pb-[16px]"
+      >
+        <a
+          href=""
+          class="hover:opacity-50 transition-opacity duration-300 ease-in"
+        >
+          <svg class="w-[100px] h-[50px]">
+            <use href="./images/sprite.svg#icon-cat-logo"></use>
+          </svg>
+        </a>
+
+        <nav class="order-2 mx-auto">
+          <ul class="flex gap-4">
+            <li>
+              <a
+                href=""
+                class="text-gray-600 hover:text-orange-400 font-medium transition-colors duration-300 ease-in"
+                >Породи</a
+              >
+            </li>
+            <li>
+              <a
+                href=""
+                class="text-gray-600 hover:text-orange-400 font-medium transition-colors duration-300 ease-in"
+                >Догляд та здоров'я</a
+              >
+            </li>
+            <li>
+              <a
+                href=""
+                class="text-gray-600 hover:text-orange-400 font-medium transition-colors duration-300 ease-in"
+                >Фотогалерея</a
+              >
+            </li>
+            <li>
+              <a
+                href=""
+                class="text-gray-600 hover:text-orange-400 font-medium transition-colors duration-300 ease-in"
+                >Контакти</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <ul class="flex gap-4">
+          <li>
+            <a
+              href=""
+              class="hover:opacity-50 transition-opacity duration-300 ease-in"
+            >
+              <svg class="w-[24px] h-[24px]">
+                <use href="./images/sprite.svg#icon-search"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a
+              href=""
+              class="hover:opacity-50 transition-opacity duration-300 ease-in"
+            >
+              <svg class="w-[24px] h-[24px]">
+                <use href="./images/sprite.svg#icon-heart"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <main>
+      <section class="bg-white">
+        <div class="container flex flex-col items-center">
+          <div class="flex flex-col">
+            <h1 class="text-[30px] md:text-4xl font-bold text-amber-600 mb-4">
+              Вся правда про вашу улюблену породу котів
+            </h1>
+
+            <p class="text-[15px] text-gray-600 mb-8">
+              Досліджуйте, дізнавайтеся, закохуйтесь. Ваш гід у світі вусатих.
+            </p>
+            <form class="relative max-w-xs mx-auto">
+              <div class="relative">
+                <input
+                  type="text"
+                  placeholder="Знайти породу..."
+                  class="w-full pl-12 pr-4 py-3 rounded-2xl border-2 border-orange-200 focus:border-orange-400 focus:ring-2 focus:ring-orange-200 focus:outline-none transition-all duration-300 easy-in"
+                />
+                <button
+                  type="submit"
+                  class="absolute left-3 top-1/2 transform -translate-y-1/2 p-2 fill-orange-400 hover:fill-slate-500 transition-colors duration-200"
+                >
+                  <svg class="w-5 h-5">
+                    <use href="./images/sprite.svg#icon-search"></use>
+                  </svg>
+                </button>
+              </div>
+            </form>
+          </div>
+          <img src="./images/hero-img.png" class="w-[400px] h-[400px]" />
+        </div>
+      </section>
+    </main>
+    <footer></footer>
+  </body>
+</html>
