@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uk">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -9,111 +9,422 @@
     />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link rel="stylesheet" type="text/css" href="style.css" />
-    <title>Document</title>
+    <title>CatWiki - Енциклопедія порід котів</title>
   </head>
-  <body class="font-[Arial]">
+  <body class="font-[Arial] bg-white">
+    <!-- Header -->
     <header class="bg-orange-100 border-b border-orange-200">
       <div
-        class="container flex justify-between items-center flex-wrap gap-y-[10px] pb-[16px]"
+        class="w-[546px] mx-auto p-[16px] md:w-[768px] lg:w-[1024px] xl:w-[1280px]"
       >
-        <a
-          href=""
-          class="hover:opacity-50 transition-opacity duration-300 ease-in"
+        <div
+          class="flex flex-col md:flex-row justify-between items-center gap-4"
         >
-          <svg class="w-[100px] h-[50px]">
-            <use href="./images/sprite.svg#icon-cat-logo"></use>
-          </svg>
-        </a>
+          <a href="" class="hover:opacity-70">
+            <svg class="w-[100px] h-[50px]">
+              <use href="./images/sprite.svg#icon-cat-logo"></use>
+            </svg>
+          </a>
 
-        <nav class="order-2 mx-auto">
-          <ul class="flex gap-4">
+          <nav class="order-2 md:order-none">
+            <ul class="flex flex-wrap justify-center gap-4 md:gap-6">
+              <li>
+                <a
+                  href=""
+                  class="text-gray-600 hover:text-orange-400 font-medium"
+                >
+                  Породи
+                </a>
+              </li>
+              <li>
+                <a
+                  href=""
+                  class="text-gray-600 hover:text-orange-400 font-medium"
+                >
+                  Догляд та здоров'я
+                </a>
+              </li>
+              <li>
+                <a
+                  href=""
+                  class="text-gray-600 hover:text-orange-400 font-medium"
+                >
+                  Фотогалерея
+                </a>
+              </li>
+              <li>
+                <a
+                  href=""
+                  class="text-gray-600 hover:text-orange-400 font-medium"
+                >
+                  Контакти
+                </a>
+              </li>
+            </ul>
+          </nav>
+
+          <ul class="flex gap-4 order-1 md:order-none">
             <li>
-              <a
-                href=""
-                class="text-gray-600 hover:text-orange-400 font-medium transition-colors duration-300 ease-in"
-                >Породи</a
-              >
+              <a href="" class="hover:opacity-70">
+                <svg class="w-[18px] h-[18px]">
+                  <use href="./images/sprite.svg#icon-search"></use>
+                </svg>
+              </a>
             </li>
             <li>
-              <a
-                href=""
-                class="text-gray-600 hover:text-orange-400 font-medium transition-colors duration-300 ease-in"
-                >Догляд та здоров'я</a
-              >
-            </li>
-            <li>
-              <a
-                href=""
-                class="text-gray-600 hover:text-orange-400 font-medium transition-colors duration-300 ease-in"
-                >Фотогалерея</a
-              >
-            </li>
-            <li>
-              <a
-                href=""
-                class="text-gray-600 hover:text-orange-400 font-medium transition-colors duration-300 ease-in"
-                >Контакти</a
-              >
+              <a href="" class="hover:opacity-70">
+                <svg class="w-[18px] h-[18px]">
+                  <use href="./images/sprite.svg#icon-heart"></use>
+                </svg>
+              </a>
             </li>
           </ul>
-        </nav>
-        <ul class="flex gap-4">
-          <li>
-            <a
-              href=""
-              class="hover:opacity-50 transition-opacity duration-300 ease-in"
-            >
-              <svg class="w-[24px] h-[24px]">
-                <use href="./images/sprite.svg#icon-search"></use>
-              </svg>
-            </a>
-          </li>
-          <li>
-            <a
-              href=""
-              class="hover:opacity-50 transition-opacity duration-300 ease-in"
-            >
-              <svg class="w-[24px] h-[24px]">
-                <use href="./images/sprite.svg#icon-heart"></use>
-              </svg>
-            </a>
-          </li>
-        </ul>
+        </div>
       </div>
     </header>
-    <main>
-      <section class="bg-white">
-        <div class="container flex flex-col items-center">
-          <div class="flex flex-col">
-            <h1 class="text-[30px] md:text-4xl font-bold text-amber-600 mb-4">
-              Вся правда про вашу улюблену породу котів
-            </h1>
 
-            <p class="text-[15px] text-gray-600 mb-8">
-              Досліджуйте, дізнавайтеся, закохуйтесь. Ваш гід у світі вусатих.
+    <main>
+      <section class="bg-white py-8 md:py-12">
+        <div
+          class="w-[546px] mx-auto p-[16px] md:w-[768px] lg:w-[1024px] xl:w-[1280px]"
+        >
+          <div class="flex flex-col lg:flex-row items-center gap-8">
+            <div class="flex-1 text-center lg:text-left">
+              <h1
+                class="text-2xl md:text-3xl lg:text-4xl font-bold text-amber-600 mb-4"
+              >
+                Вся правда про вашу улюблену породу котів
+              </h1>
+              <p class="text-base md:text-lg text-gray-600 mb-6 md:mb-8">
+                Досліджуйте, дізнавайтеся, закохуйтесь. Ваш гід у світі вусатих.
+              </p>
+              <form class="max-w-md mx-auto lg:mx-0">
+                <div class="relative">
+                  <input
+                    type="text"
+                    placeholder="Знайти породу..."
+                    class="w-full pl-12 pr-4 py-3 rounded-2xl border-2 border-orange-200 focus:border-orange-400 focus:outline-none"
+                  />
+                  <button
+                    type="submit"
+                    class="absolute left-3 top-1/2 transform -translate-y-1/2 p-2 fill-orange-400 hover:fill-slate-500"
+                  >
+                    <svg class="w-5 h-5">
+                      <use href="./images/sprite.svg#icon-search"></use>
+                    </svg>
+                  </button>
+                </div>
+              </form>
+            </div>
+            <div class="flex-1 flex justify-center">
+              <img
+                src="./images/hero-img.png"
+                class="w-full max-w-[300px] md:max-w-[400px] h-auto"
+                alt="Кіт"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="bg-white py-8 md:py-12">
+        <div
+          class="w-[546px] mx-auto p-[16px] md:w-[768px] lg:w-[1024px] xl:w-[1280px]"
+        >
+          <div class="text-center mb-8 md:mb-12">
+            <h2
+              class="text-xl md:text-2xl font-bold text-amber-700 mb-3 md:mb-4"
+            >
+              Найпопулярніші породи серед наших відвідувачів
+            </h2>
+            <p class="text-sm md:text-base text-gray-600 max-w-2xl mx-auto">
+              Відкрийте для себе унікальний світ кожної породи. Дізнайтесь про
+              їхній характер, особливості догляду та історію.
             </p>
-            <form class="relative max-w-xs mx-auto">
-              <div class="relative">
-                <input
-                  type="text"
-                  placeholder="Знайти породу..."
-                  class="w-full pl-12 pr-4 py-3 rounded-2xl border-2 border-orange-200 focus:border-orange-400 focus:ring-2 focus:ring-orange-200 focus:outline-none transition-all duration-300 easy-in"
-                />
+          </div>
+
+          <div
+            class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6"
+          >
+            <div
+              class="flex gap-3 rounded-lg border border-gray-300 bg-white p-3 min-w-0"
+            >
+              <div class="flex-1 min-w-0">
+                <h3 class="text-base font-semibold text-gray-800 mb-2">
+                  Шотландська висловуха
+                </h3>
+                <p class="text-xs text-gray-600 mb-3 leading-normal">
+                  Лагідні та компанійські. Відомі своїми милими «вислоухими»
+                  вухами та грайливим характером. Ідеальні для квартири.
+                </p>
                 <button
-                  type="submit"
-                  class="absolute left-3 top-1/2 transform -translate-y-1/2 p-2 fill-orange-400 hover:fill-slate-500 transition-colors duration-200"
+                  class="bg-red-800 hover:bg-red-900 text-white text-xs py-1 px-3 rounded focus:outline-none focus:ring-2 focus:ring-red-600"
                 >
-                  <svg class="w-5 h-5">
-                    <use href="./images/sprite.svg#icon-search"></use>
-                  </svg>
+                  Дізнатись більше
                 </button>
               </div>
-            </form>
+              <div class="w-20 md:w-24 flex-shrink-0">
+                <img
+                  src="./images/cat1.jpg"
+                  alt="Шотландська висловуха кіт"
+                  class="w-full h-20 md:h-24 object-cover rounded"
+                />
+              </div>
+            </div>
+
+            <div
+              class="flex gap-3 rounded-lg border border-gray-300 bg-white p-3 min-w-0"
+            >
+              <div class="flex-1 min-w-0">
+                <h3 class="text-base font-semibold text-gray-800 mb-2">
+                  Мейн-кун
+                </h3>
+                <p class="text-xs text-gray-600 mb-3 leading-normal">
+                  Велетенські та доброзичливі гіганти. Надзвичайно розумні,
+                  спокійні та віддані. Часто називають «песиками» світу котів.
+                </p>
+                <button
+                  class="bg-red-800 hover:bg-red-900 text-white text-xs py-1 px-3 rounded focus:outline-none focus:ring-2 focus:ring-red-600"
+                >
+                  Дізнатись більше
+                </button>
+              </div>
+              <div class="w-20 md:w-24 flex-shrink-0">
+                <img
+                  src="./images/cat2.jpeg"
+                  alt="Мейн кун"
+                  class="w-full h-20 md:h-24 object-cover rounded"
+                />
+              </div>
+            </div>
+
+            <div
+              class="flex gap-3 rounded-lg border border-gray-300 bg-white p-3 min-w-0"
+            >
+              <div class="flex-1 min-w-0">
+                <h3 class="text-base font-semibold text-gray-800 mb-2">
+                  Британська короткошерста
+                </h3>
+                <p class="text-xs text-gray-600 mb-3 leading-normal">
+                  Справжні джентльмени з незалежним характером. Спокійні, вперті
+                  та дуже прив'язуються до дому. Міцні та здорові.
+                </p>
+                <button
+                  class="bg-red-800 hover:bg-red-900 text-white text-xs py-1 px-3 rounded focus:outline-none focus:ring-2 focus:ring-red-600"
+                >
+                  Дізнатись більше
+                </button>
+              </div>
+              <div class="w-20 md:w-24 flex-shrink-0">
+                <img
+                  src="./images/cat3.jpg"
+                  alt="Британський короткошерстний кіт"
+                  class="w-full h-20 md:h-24 object-cover rounded"
+                />
+              </div>
+            </div>
+
+            <div
+              class="flex gap-3 rounded-lg border border-gray-300 bg-white p-3 min-w-0"
+            >
+              <div class="flex-1 min-w-0">
+                <h3 class="text-base font-semibold text-gray-800 mb-2">
+                  Сфінкс
+                </h3>
+                <p class="text-xs text-gray-600 mb-3 leading-normal">
+                  Екстравагантні та енергійні. Відсутність шерсті робить їх
+                  гіпоалергенними, але вимагає особливого догляду за шкірою.
+                  Дуже ласкаві.
+                </p>
+                <button
+                  class="bg-red-800 hover:bg-red-900 text-white text-xs py-1 px-3 rounded focus:outline-none focus:ring-2 focus:ring-red-600"
+                >
+                  Дізнатись більше
+                </button>
+              </div>
+              <div class="w-20 md:w-24 flex-shrink-0">
+                <img
+                  src="./images/cat4.jpg"
+                  alt="Сфінкс кіт"
+                  class="w-full h-20 md:h-24 object-cover rounded"
+                />
+              </div>
+            </div>
+
+            <div
+              class="flex gap-3 rounded-lg border border-gray-300 bg-white p-3 min-w-0"
+            >
+              <div class="flex-1 min-w-0">
+                <h3 class="text-base font-semibold text-gray-800 mb-2">
+                  Перська кішка
+                </h3>
+                <p class="text-xs text-gray-600 mb-3 leading-normal">
+                  Аристократичні та врівноважені. Їхня розкішна довга шерсть
+                  вимагає щоденного розчісування. Типові «килимові левади».
+                </p>
+                <button
+                  class="bg-red-800 hover:bg-red-900 text-white text-xs py-1 px-3 rounded focus:outline-none focus:ring-2 focus:ring-red-600"
+                >
+                  Дізнатись більше
+                </button>
+              </div>
+              <div class="w-20 md:w-24 flex-shrink-0">
+                <img
+                  src="./images/cat5.jpg"
+                  alt="Перська кішка"
+                  class="w-full h-20 md:h-24 object-cover rounded"
+                />
+              </div>
+            </div>
+
+            <div
+              class="flex gap-3 rounded-lg border border-gray-300 bg-white p-3 min-w-0"
+            >
+              <div class="flex-1 min-w-0">
+                <h3 class="text-base font-semibold text-gray-800 mb-2">
+                  Бенгальська кішка
+                </h3>
+                <p class="text-xs text-gray-600 mb-3 leading-normal">
+                  Енергійні та грайливі «домашні леопарди». Дуже активні,
+                  розумні та потребують багато уваги. Обожнюють воду.
+                </p>
+                <button
+                  class="bg-red-800 hover:bg-red-900 text-white text-xs py-1 px-3 rounded focus:outline-none focus:ring-2 focus:ring-red-600"
+                >
+                  Дізнатись більше
+                </button>
+              </div>
+              <div class="w-20 md:w-24 flex-shrink-0">
+                <img
+                  src="./images/cat6.jpg"
+                  alt="Бенгальська кішка"
+                  class="w-full h-20 md:h-24 object-cover rounded"
+                />
+              </div>
+            </div>
           </div>
-          <img src="./images/hero-img.png" class="w-[400px] h-[400px]" />
         </div>
       </section>
     </main>
-    <footer></footer>
+
+    <footer class="bg-gray-100 border-t border-gray-200 py-8 md:py-12">
+      <div
+        class="w-[546px] mx-auto p-[16px] md:w-[768px] lg:w-[1024px] xl:w-[1280px]"
+      >
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <!-- Company Info -->
+          <div>
+            <h3 class="font-semibold text-gray-800 mb-4">
+              Наша мета - зібрати найкориснішу інформацію про кішок в одному
+              місці
+            </h3>
+            <div class="flex gap-4">
+              <a href="" class="hover:opacity-70">
+                <svg class="w-5 h-5">
+                  <use href="./images/sprite.svg#icon-facebook"></use>
+                </svg>
+              </a>
+              <a href="" class="hover:opacity-70">
+                <svg class="w-5 h-5">
+                  <use href="./images/sprite.svg#icon-instagram"></use>
+                </svg>
+              </a>
+              <a href="" class="hover:opacity-70">
+                <svg class="w-5 h-5">
+                  <use href="./images/sprite.svg#icon-telegram"></use>
+                </svg>
+              </a>
+              <a href="" class="hover:opacity-70">
+                <svg class="w-5 h-5">
+                  <use href="./images/sprite.svg#icon-youtube"></use>
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <div>
+            <h3 class="font-semibold text-gray-800 mb-4">Навігація</h3>
+            <ul class="space-y-2">
+              <li>
+                <a href="" class="text-gray-600 hover:text-orange-400">
+                  Породи
+                </a>
+              </li>
+              <li>
+                <a href="" class="text-gray-600 hover:text-orange-400">
+                  Догляд та здоров'я
+                </a>
+              </li>
+              <li>
+                <a href="" class="text-gray-600 hover:text-orange-400">
+                  Фотогалерея
+                </a>
+              </li>
+              <li>
+                <a href="" class="text-gray-600 hover:text-orange-400">
+                  Контакти
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h3 class="font-semibold text-gray-800 mb-4">Допомога</h3>
+            <ul class="space-y-2">
+              <li>
+                <a href="" class="text-gray-600 hover:text-orange-400"
+                  >Про проєкт</a
+                >
+              </li>
+              <li>
+                <a href="" class="text-gray-600 hover:text-orange-400"
+                  >Часті запитання</a
+                >
+              </li>
+              <li>
+                <a href="" class="text-gray-600 hover:text-orange-400"
+                  >Реклама на сайті</a
+                >
+              </li>
+              <li>
+                <a href="" class="text-gray-600 hover:text-orange-400"
+                  >Зворотній зв'язок</a
+                >
+              </li>
+              <li>
+                <a href="" class="text-gray-600 hover:text-orange-400"
+                  >Наш магазин</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h3 class="font-semibold text-gray-800 mb-4">Розсилка</h3>
+            <p class="text-gray-600 mb-3 text-sm">
+              Підпишіться на оновлення та дізнавайтеся про нові породи першими.
+            </p>
+            <form class="flex gap-2">
+              <input
+                type="email"
+                placeholder="Ваш email"
+                class="flex-1 px-3 py-2 border border-gray-300 rounded focus:outline-none focus:border-orange-400"
+              />
+              <button
+                class="bg-orange-400 hover:bg-orange-500 text-white px-4 py-2 rounded focus:outline-none focus:ring-2 focus:ring-orange-300"
+              >
+                OK
+              </button>
+            </form>
+          </div>
+        </div>
+
+        <div class="border-t border-gray-200 mt-8 pt-6 text-center">
+          <p class="text-gray-600 text-sm">
+            © 2024 CatWiki. Всі права захищені.
+          </p>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
